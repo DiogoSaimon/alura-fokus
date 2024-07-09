@@ -22,4 +22,4 @@ Construído o projeto para em:
 - Breve funcionamento do Objeto Audio
 - Breve funcionanemto do Objeto Date e a função reservada toLocaleTimeString.
 
-Caso queira visualizar o resultado do projeto online, seu o link: 
+Caso queira visualizar o resultado do projeto online, seu o link: https://alura-fokus-ruby.vercel.app/
