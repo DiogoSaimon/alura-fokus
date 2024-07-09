@@ -106,7 +106,7 @@ function startOrPause() {
 function clear() {
   clearInterval(intervalId);
   startOrPauseButton.textContent = "Começar";
-  startOrPauseIcon.setAttribute("src", "/.imagens/play_arrow.png");
+  startOrPauseIcon.setAttribute("src", "./imagens/play_arrow.png");
   intervalId = null;
 }
 
