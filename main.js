@@ -8,15 +8,13 @@ const buttons = document.querySelectorAll(".app__card-button");
 const startPauseButton = document.querySelector("#start-pause");
 const focusMusicInput = document.querySelector("#alternar-musica");
 const startOrPauseButton = document.querySelector("#start-pause span");
-const startOrPauseIcon = document.querySelector(
-  ".app__card-primary-butto-icon"
-);
+const startOrPauseIcon = document.querySelector(".app__card-primary-butto-icon");
 const timerOnScreen = document.querySelector("#timer");
 
-const music = new Audio("/sons/luna-rise-part-one.mp3");
-const playMusic = new Audio("/sons/play.wav");
-const pauseMusic = new Audio("/sons/pause.mp3");
-const finishTimerMusic = new Audio("/sons/beep.mp3");
+const music = new Audio("./sons/luna-rise-part-one.mp3");
+const playMusic = new Audio("./sons/play.wav");
+const pauseMusic = new Audio("./sons/pause.mp3");
+const finishTimerMusic = new Audio("./sons/beep.mp3");
 
 let elapsedTimeInSeconds = 1500;
 let intervalId = null;
@@ -38,7 +36,7 @@ function switchContext(context) {
   });
 
   html.setAttribute("data-contexto", context);
-  banner.setAttribute("src", `imagens/${context}.png`);
+  banner.setAttribute("src", `./imagens/${context}.png`);
 
   switch (context) {
     case "foco":
@@ -102,13 +100,13 @@ function startOrPause() {
   playMusic.play();
   intervalId = setInterval(countdown, 1000);
   startOrPauseButton.textContent = "Pausar";
-  startOrPauseIcon.setAttribute("src", "/imagens/pause.png");
+  startOrPauseIcon.setAttribute("src", "./imagens/pause.png");
 }
 
 function clear() {
   clearInterval(intervalId);
   startOrPauseButton.textContent = "Começar";
-  startOrPauseIcon.setAttribute("src", "imagens/play_arrow.png");
+  startOrPauseIcon.setAttribute("src", "/.imagens/play_arrow.png");
   intervalId = null;
 }
 
